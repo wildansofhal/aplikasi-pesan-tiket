@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="input_line">
+        <h1>Aplikasi Pemesanan Tiket Travel</h1>
+        <div class="input_line">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama">
+        </div>
+
+        <div class="input_line">
+            <label for="tujuan">Tujuan</label>
+            <select id="tujuan">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Majalengka">Majalengka</option>
+            </select>
+        </div>
+
+        <div class="input_line">
+            <label for="hargaTiket">Harga Tiket :</label>
+            <input type="number" id="hargaTiket" disabled>
+        </div>
+
+        <div class="input_line">
+            <label for="jumlahTiket">Jumlah Tiket</label>
+            <select id="jumlahTiket">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="input_line">
+            <label for="diskon">Diskon (%)</label>
+            <input type="number" id="diskon">
+        </div>
+
+        <div class="input_line">
+            <label for="totalBayar">Total Bayar</label>
+            <input type="number" id="totalBayar" disabled>
+        </div>
+
+        <div class="member">
+            <label for="member">Member</label>
+            <input type="checkbox" id="member" value="member">
+        </div>
+
+        <div class="submit">
+            <input type="button" value="Pesan" onclick="hitungTotalBayar()">
+        </div>
+    </form>
+
+</body>
+</html>
